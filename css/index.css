@@ -1,0 +1,352 @@
+/* 首页样式 */
+/* 版心 */
+.wrapper {
+    margin: 0 auto;
+    width: 1200px;
+  }
+  
+  body {
+    background-color: #f3f5f7;
+  }
+  
+  /* 头部区域 */
+  .header {
+    height: 100px;
+    background-color: #fff;
+  }
+  /* 两个之间要用空格隔开 */
+  .header .wrapper {
+    padding-top: 29px;
+    display: flex;
+  }
+  
+  /* logo */
+  .logo a {
+    display: block;
+    width: 195px;
+    height: 41px;
+    background-image: url(../images/logo.png);
+    font-size: 0;
+  }
+  
+  /* 导航 */
+  .nav {
+    margin-left: 102px;
+  }
+  
+  .nav ul {
+    display: flex;
+  }
+  
+  .nav li {
+    margin-right: 24px;
+  }
+  
+  .nav li a {
+    display: block;
+    padding: 6px 8px;
+    line-height: 27px;
+    font-size: 19px;
+  }
+  /* active 类选择器，表示默认选中的a ，使用并集选择器*/
+  .nav li .active,
+  .nav li a:hover{
+border-bottom:2px solid #00a4ff ;
+  }
+  /* 搜索区域 */
+  .search{
+    margin-left: 64px;
+    padding-left: 19px;
+    padding-right: 12px;
+    display: flex;
+    width: 412px;
+    height: 40px;
+    background-color: #f3f5f7;
+    border-radius: 20pxs;
+}
+.search input{
+    /* 弹性伸缩比,整数数字，代表父级整份的份数  */
+    flex: 1;
+    border: 0;
+    /* 透明颜色 */
+    background-color: transparent;
+    /* 去掉表单控件的焦点框外边框 */
+    outline: none;
+}
+/*特殊选择器 ：：placeholder 选中的就是placeholder 属性文字样式  */
+.search input::placeholder{
+    font-size: 14px;
+    color: #999;
+}
+/* 父级的flex布局，子级 变弹性盒子，加宽高生效*/
+.search a{
+    align-self: center;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/search.png);
+}
+/* 用户区域 */
+.user{
+    margin-left: 32px;
+    margin-top: 4px;
+}
+/* vertical-align 行内块和行内垂直方向对齐方式 */
+.user img{
+    vertical-align: middle;
+     margin-right: 7px;
+}
+.user span{
+    font-size: 16px;
+    color: #666;
+}
+/* banner区域 */
+.banner{
+    height: 420px;
+    background-color:#0092cb ;
+}
+.banner .wrapper {
+    display: flex;
+    /* 延主轴均匀排列，空白间距均分在弹性盒子之间 */
+    justify-content: space-between;
+    height: 420px;
+    background-image: url(../uploads/banner.png);
+}
+/* 侧导航区域样式 */
+.banner .left{
+    padding: 3px 20px;
+    width: 191px;
+    height: 420px;
+    background-color: rgba(0,0, 0, 0.42);
+}
+.banner .left a {
+    /* 转为块级：宽度是父级的百分之百 */
+    display: block;
+    height: 46px;
+    background: url(../images/right.png)  no-repeat right center;
+    line-height: 46px;
+    color: #fff;
+    font-size: 16px;
+}
+.banner .left a:hover{
+    background-image: url(../images/right-hover.png);
+    color: #00a4ff;
+}
+/* 课程表区域 */
+.banner .right {
+    margin-top: 60px;
+    height: 305px;
+    width: 218px;
+    background-color: #209dd5;
+    border-radius: 10px;
+}
+.banner .right h3{
+    margin-left: 14px;
+    height: 48px;
+    line-height: 48px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400px;
+    }
+.banner .right .content{
+    padding:  14px;
+    height: 257px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.banner .right dl {
+    margin-bottom: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.banner .right dt {
+    font-style: 14px;
+    margin-bottom: 8px;
+    line-height: 20px;
+    font-weight: 700;
+}
+.banner .right dd {
+    font-size: 12px;
+    line-height:16px ;
+    margin-bottom: 8px;
+
+}
+.banner .right dd span {
+    color: #00a4ff;
+}
+.banner .right dd strong{
+    color: #7d7d7d;
+    font-weight: 400;
+}
+.banner .right  a {
+     display: block;
+     height: 32px;
+     background-color: #00a4ff;
+     border-radius: 15px;
+     text-align: center;
+     line-height: 32px;
+     color: #fff;
+     font-size: 14px;
+}
+/* 精品推荐 */
+    .recommend {
+        display: flex;
+        margin-top: 11px;
+        padding: 0 20px;
+        height: 60px;
+        background-color: #fff;
+        box-shadow: 0px 1px 2px 0px rgba(211,211, 211, 0.5);
+        line-height: 60px;
+    }
+    .recommend ul{
+        display: flex;
+        flex:1;
+    }
+    .recommend h3{
+        font-size: 18px;
+        color: #00a4ff;
+        font-weight: 400;
+    }
+    .recommend ul li a {
+        padding: 0 24px;
+        border-right:1px solid #e0e0e0 ;
+        font-size: 18px;
+    }
+    .recommend ul li:last-child a {
+        border-right: 0;
+    }
+    .recommend .modify{
+        font-size: 16px;
+        color: #00a4ff;
+    }
+    /* 精品内容推荐样式 */
+    .course{
+         margin-top: 15px;
+        
+    }
+   /* 标题 - 公共类，与其他区域共用 */
+    .hd {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    line-height: 60px;
+    }
+    .hd h3{
+        font-size: 21px;
+        font-weight: 400;
+    }
+    .hd .more{
+        padding-right: 20px;
+        background: url(../images/more.png) no-repeat right center;
+        font-size: 14px;
+        color: #999;
+    }
+    /* 课程内容-公共类 */
+    .bd ul {
+        display: flex;
+        /* 弹性盒子换行 .弹性盒子自动变小，强行压缩到一行中*/
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .bd li {
+        margin-bottom: 14px;
+        width: 228px;
+        height: 271px;
+    }
+    .bd li .pic{
+        height: 156px;
+    }
+    .bd li .text{
+        padding: 20px;
+        height: 115px;
+        background-color: #fff;
+    }
+    .bd li .text h4{
+        margin-bottom: 13px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+    .bd li .text p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #999;
+    }
+    .bd li .text p span{
+        color: #fa6400;
+    }
+    .bd li .text p i{
+        font-style: normal;
+    }
+    /* 前端 */
+    .hd ul {
+        display: flex;
+    }
+    .hd li{
+        margin-right: 16px;
+        font-size: 16px;
+    }
+    .hd li .active{
+        color: #0092cb;
+    }
+    .bd{
+        display: flex;
+        justify-content: space-between;
+    }
+    .bd .left{
+        width: 228px;
+    }
+    .bd .right{
+        width: 957px;
+    }
+    .bd .right .top{
+        margin-bottom: 15px;
+        height: 100px;
+    }
+    /* 版权 */
+    .footer{
+        margin-top: 60px;
+        height: 273px;
+        padding-top: 60px;
+        background-color: #fff;
+    }
+    .footer .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer .left {
+        width: 440px;  
+    }
+    .footer .left p{
+        margin-top: 24px;
+        margin-bottom: 14px;
+        font-size: 12px;
+        line-height: 17px;
+        color: #666;
+    }
+    .footer .left .download{
+        display: block;
+        width: 120px;
+        height: 36px;
+        border: 1px solid #00a4ff;
+        text-align: center;
+        line-height: 34px;
+        font-size: 16px;
+        color: #00a4ff;
+    }
+    .footer .right{
+        display: flex;
+    }
+    .footer .right dl{
+        margin-left: 130px;
+    }
+    .footer .right dt{
+        margin-bottom: 12px;
+        font-size: 16px;
+        line-height: 23px;
+
+    }
+    .footer .right a{
+        font-size: 14px;
+        color: #666;
+        line-height: 24px;
+    }
